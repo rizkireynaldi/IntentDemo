@@ -2,11 +2,12 @@ package com.alienequip.intentdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_move_activity:
+                Intent moveIntent = new Intent(MainActivity.this, MoveActivity.class);
+                startActivity(moveIntent);
                 break;
         }
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        
     }
 }
