@@ -23,4 +23,18 @@
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:id="@+id/btn_move_activity_data"
         android:text="@string/move_with_data" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/btn_move_activity_object"
+        android:text="@string/move_with_object" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/btn_dial_number"
+        android:text="@string/dial_number" />
 </LinearLayout>
